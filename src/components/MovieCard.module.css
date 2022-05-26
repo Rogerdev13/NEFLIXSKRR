@@ -43,3 +43,21 @@
 }
 
 
+@media screen and (max-width:800px){
+    .thumb::after{
+        content:'';
+        position:absolute;
+        background-color:transparent;
+        top:100%;
+        left:0;
+        width:100%;
+        height:100%;
+        display:grid;
+        place-items: center;
+        transition:top .5s ease;
+        font-size:2em;
+        font-family:sans-serif;
+        pointer-events:none;
+    }
+}
+
