@@ -1,7 +1,8 @@
+
 .card{
     max-width: 800px;
     width: 90%;
-    margin:70px auto ;
+    margin:40px auto  ;
     display:flex;
     justify-content: center;
     height:350px;
@@ -33,13 +34,12 @@
     flex-direction: column;
     justify-content:space-evenly;
     width:40%;
-    margin-bottom:40px;
+   
 }
 
 @media screen and (max-width:560px) {
-
     .card{
-        height:300px;
+        height:max-content;
     }
     .texts{
         width:60%;
