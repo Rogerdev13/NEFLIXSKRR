@@ -3,6 +3,7 @@ import {Spinner} from './Spinner'
 import {MovieCard} from './MovieCard'
 import { useEffect , useState } from 'react'
 import { getFetch } from '../functions/fetch';
+import {Empty} from './Empty'
 
 import InfiniteScroll from 'react-infinite-scroll-component';
 
@@ -23,6 +24,7 @@ export function MovieGrid({search}){
   
     useEffect(()=>{
         const urlImg = search ? "/search/movie?query=" + search + "&page=" + page : "/discover/movie?page=" + page;
+        
         getFetch(urlImg).then(data => {
             setHasMore(data.page < data.total_pages)
             setMovies(prevMovies => prevMovies.concat(data.results));
@@ -30,6 +32,10 @@ export function MovieGrid({search}){
         })
 
     } , [search , page]);
+
+    if (!isLoading && movies.length === 0) {
+        return <Empty />;
+      }
 
   
     
