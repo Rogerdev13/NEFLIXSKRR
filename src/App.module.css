@@ -1,0 +1,31 @@
+.title{
+    font-size:2.8rem;
+    color:#fff;
+    text-align: center;
+    letter-spacing:2px;
+    text-shadow: 0 0 10px rgb(5, 211, 12), 0 0 20px rgb(4, 105, 38), 0 0 20px #118103, 0 0 10px #e60073,
+    0 0 30px #0eac43, 0 0 60px #07df2b, 0 0 50px #035c0f;
+    margin:40px 0 20px;
+    background-clip: text;
+    background-image: linear-gradient(to top, #ffffff 0%, #ffffff 100%);
+    -webkit-background-clip: text;
+    -moz-background-clip: text;
+    animation:color 7s linear infinite;
+}
+
+
+
+
+@keyframes color {
+    0%{
+        filter:hue-rotate(0deg);
+    }100%{
+        filter:hue-rotate(360deg);
+    }
+}
+
+@media screen and (max-width:800px) {
+    .title{
+        animation:none;
+    }
+}

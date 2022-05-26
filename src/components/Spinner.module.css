@@ -1,0 +1,18 @@
+.spinner{
+    display:flex;
+    justify-content:center;
+    margin-top:60px;
+    height:calc(100vh - 300px);
+    align-items:center
+
+}
+
+.spinner__icon{
+    animation:rotate 1s linear infinite;
+}
+
+@keyframes rotate{
+    to{
+        transform:rotate(360deg);
+    }
+}

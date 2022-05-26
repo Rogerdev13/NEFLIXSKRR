@@ -1,0 +1,50 @@
+.card{
+    max-width: 800px;
+    width: 90%;
+    margin:70px auto;
+    display:flex;
+    justify-content: center;
+    height:350px;
+    flex-wrap:wrap;
+    gap:1em;
+}
+
+.paragraph{
+    font-weight:300;
+    letter-spacing: 1px;
+}
+
+.paragraphespecial{
+    font-weight: 700;
+    font-size:1.1em;
+}
+
+.img{
+    object-fit:cover;
+    width:40%;
+    height:auto;
+}
+
+.texts{
+    display:flex;
+    flex-direction: column;
+    justify-content:space-evenly;
+    width:40%;
+}
+
+@media screen and (max-width:560px) {
+    .texts{
+        width:60%;
+        gap:1em;
+    }
+    .title{
+        text-align:center;
+    }
+    .img{
+        width:60%;
+    }
+
+    .paragraph{
+        text-align:justify;
+    }
+}

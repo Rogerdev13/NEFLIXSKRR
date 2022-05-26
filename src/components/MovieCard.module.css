@@ -1,0 +1,45 @@
+.img{
+    width:280px;
+    object-fit: cover;
+    transition:transform .3s ease;
+}
+
+.title{
+    text-align:center;
+    font-size:1.1em;
+    margin-top:10px;
+    letter-spacing:1px;
+}
+
+.thumb{
+    position:relative;
+    overflow:hidden;
+    border-radius:10px;
+    cursor:pointer;
+ 
+}
+
+.thumb::after{
+    content:'See Details';
+    position:absolute;
+    background-color:rgba(0, 0, 0, 0.747);
+    top:100%;
+    left:0;
+    width:100%;
+    height:100%;
+    display:grid;
+    place-items: center;
+    transition:top .5s ease;
+    font-size:2em;
+    font-family:sans-serif;
+    pointer-events:none;
+}
+
+.card:hover .thumb::after{
+    top:0;
+}
+.card:hover .img{
+    transform:scale(1.1);
+}
+
+
