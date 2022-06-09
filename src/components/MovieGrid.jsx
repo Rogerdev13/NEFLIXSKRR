@@ -35,7 +35,7 @@ export function MovieGrid({search}){
 
     if (!isLoading && movies.length === 0) {
         return <Empty />;
-      }
+    }
 
   
     

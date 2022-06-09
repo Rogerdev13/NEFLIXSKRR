@@ -1,6 +1,6 @@
 .grid{
     display: grid;
-    grid-template-columns:repeat(auto-fill , 280px);
+    grid-template-columns:repeat(auto-fit , 280px);
     color:#fff;
     padding:0 40px;
     justify-content:center;
